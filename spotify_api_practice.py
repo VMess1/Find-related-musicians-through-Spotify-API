@@ -36,11 +36,11 @@ def make_authorization(token):
     return headers
 
 
-def find_artist_by_id(artist_id, headers):
-    endpoint = f"https://api.spotify.com/v1/artists/{artist_id}"
-    headers = headers
-    response = requests.get(endpoint, headers=headers)
-    return response.json()
+# def find_artist_by_id(artist_id, headers):
+#     endpoint = f"https://api.spotify.com/v1/artists/{artist_id}"
+#     headers = headers
+#     response = requests.get(endpoint, headers=headers)
+#     return response.json()
 
 
 def find_related_artists(artist_id, headers):
